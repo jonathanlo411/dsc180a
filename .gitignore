@@ -1,0 +1,7 @@
+
+# Python Overhead
+__pycache__
+.ipynb_checkpoints
+
+# Mac stuff
+.DS_Store
