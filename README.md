@@ -1,7 +1,7 @@
 
 # DSC180 - Auditlab
 <a href="https://github.com/jonathanlo411/dsc180/releases"><img src="https://img.shields.io/github/v/release/jonathanlo411/dsc180"></a><a href="https://github.com/jonathanlo411/dsc180/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jonathanlo411/dsc180"></a>
-[![Alt](https://repobeats.axiom.co/api/embed/3777d591e1e999f0e7c2f9f1d15f73cd820e72aa.svg "Repobeats analytics image for DSC180")](https://github.com/jonathanlo411/dsc180/pulse)
+[![Alt](https://repobeats.axiom.co/api/embed/3777d591e1e999f0e7c2f9f1d15f73cd820e72aa.svg "Repobeats analytics image for DSC180")](https://github.com/jonathanlo411/dsc180/pulse/monthly)
 
 ## Overview
 This repository contains files related to auditing opaque ML models. There is a `util.py` file that contains general overhead setup but most of the analysis and data collection work is completed within the notebooks.
