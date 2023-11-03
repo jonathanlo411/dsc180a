@@ -62,3 +62,6 @@ def generate_names(data_path, race, sex):
         for last_name in names_data[race]['last']:
             names.append(f"{first_name} {last_name}")
     return names
+
+def flatten(l):
+    return [item for sublist in l for item in sublist]
