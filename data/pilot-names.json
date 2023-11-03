@@ -1,0 +1,98 @@
+{
+    "white": {
+        "first": {
+            "female": [
+                "Allison",
+                "Anne",
+                "Carrie",
+                "Emily",
+                "Jill",
+                "Laurie",
+                "Kristen",
+                "Meredith",
+                "Molly",
+                "Amy",
+                "Claire",
+                "Emily",
+                "Katie",
+                "Madeline",
+                "Katelyn",
+                "Emma"
+            ],
+            "male": [
+                "Brad",
+                "Brendan",
+                "Geoffrey",
+                "Greg",
+                "Brett",
+                "Jay",
+                "Mathew",
+                "Neil",
+                "Jake",
+                "Conner",
+                "Tanner",
+                "Wyatt",
+                "Cody",
+                "Dustin",
+                "Luke",
+                "Jack"
+            ]
+        },
+        "last": [
+            "Smith",
+            "Johnson",
+            "Miller",
+            "Brown",
+            "Jones"
+        ]
+    },
+    "black": {
+        "first": {
+            "female": [
+                "Aisha",
+                "Ebony",
+                "Keisha",
+                "Kenya",
+                "Latonya",
+                "Lakisha",
+                "Latoya",
+                "Tamika",
+                "Imani",
+                "Ebony",
+                "Shanice",
+                "Aaliyah",
+                "Precious",
+                "Nia",
+                "Deja",
+                "Diamond",
+                "Latanya",
+                "Latisha"
+            ],
+            "male": [
+                "Darnell",
+                "Hakim",
+                "Jermaine",
+                "Kareem",
+                "Jamal",
+                "Leroy",
+                "Rasheed",
+                "Tremayne",
+                "DeShawn",
+                "DeAndre",
+                "Marquis",
+                "Darnell",
+                "Terrell",
+                "Malik",
+                "Trevon",
+                "Tyrone"
+            ]
+        },
+        "last": [
+            "Williams",
+            "Johnson",
+            "Smith",
+            "Jones",
+            "Brown"
+        ]
+    }
+}
