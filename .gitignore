@@ -5,3 +5,8 @@ __pycache__
 
 # Mac stuff
 .DS_Store
+
+# Virtual Enviroment
+myenv/
+flask-env/
+venv/
