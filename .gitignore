@@ -13,3 +13,5 @@ venv/
 
 # Various logs
 logs/
+html/
+results.csv
