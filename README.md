@@ -4,7 +4,13 @@
 [![Alt](https://repobeats.axiom.co/api/embed/3777d591e1e999f0e7c2f9f1d15f73cd820e72aa.svg "Repobeats analytics image for DSC180")](https://github.com/jonathanlo411/dsc180/pulse/monthly)
 
 ## Overview
-This repository contains files related to auditing opaque ML models. There is a `util.py` file that contains general overhead setup but most of the analysis and data collection work is completed within the notebooks.
+This repository contains files related to auditing opaque ML models. There is a `util.py` file that contains general overhead setup but most of the analysis and data collection work is completed within the notebooks. It also contains a `script.py` file which will act as the main querying method.
+
+### Usage
+Use the `script.py` file as a querying method. All results will be saved into a `results.csv`
+Options:
+- `-d`, `--debug`: Writes to the log dir
+- `-s`, `--serialize`: Serializes the raw HTML for ad hoc analysis
 
 ### Tech Stack
 Web querying is handled by Selenium using a head based Chromium browser. There is an option to use the `requests`  package in place of Selenium. Core language is in Python.
