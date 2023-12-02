@@ -37,7 +37,7 @@ def main(debug, serialize):
     print("Internet connected: ", internet())
 
     # Generate names
-    path = "./../data/pilot-names.json"
+    path = "./data/pilot-names.json"
     white_female_names = generate_names(path, 'white', 'female')
     white_male_names = generate_names(path, 'white', 'male')
     black_female_names = generate_names(path, 'black', 'female')
@@ -58,7 +58,7 @@ def main(debug, serialize):
             
             # Serialize
             if serialize:
-                with open(f'./html/{name.strip()}.html', 'w') as f:
+                with open(f'./html/{group}_{name.replace(" ", "_")}.html', 'w') as f:
                     f.write(raw_html)
 
             # Other res
@@ -67,8 +67,8 @@ def main(debug, serialize):
                 for ad_opts in ad_items:
                     all_ads.append([name, group, domain, ad_opts[0], ad_opts[1]])
 
-    with open('results.csv', 'w') as f:
-        f.write(all_ads)
+    # Save results to CSV
+    pd.DataFrame(all_ads[1:], columns=all_ads[0]).to_csv("results.csv")
     
 
 def setup_logger():
