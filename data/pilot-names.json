@@ -43,7 +43,13 @@
             "Johnson",
             "Miller",
             "Brown",
-            "Jones"
+            "Jones",
+            "Williams",
+            "Davis",
+            "Anderson",
+            "Wilson",
+            "Martin",
+            "Taylor"
         ]
     },
     "black": {
@@ -64,9 +70,7 @@
                 "Precious",
                 "Nia",
                 "Deja",
-                "Diamond",
-                "Latanya",
-                "Latisha"
+                "Diamond"
             ],
             "male": [
                 "Darnell",
@@ -92,7 +96,13 @@
             "Johnson",
             "Smith",
             "Jones",
-            "Brown"
+            "Brown",
+            "Jackson",
+            "Davis",
+            "Thomas",
+            "Harris",
+            "Robinson",
+            "Taylor"
         ]
     }
 }
