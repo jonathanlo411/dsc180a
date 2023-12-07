@@ -53,19 +53,22 @@ def main(debug, serialize):
     all_ads = [['Name', 'Group', 'Ad Domain', 'Ad Title', 'Ad Link']]
     for group, names in tqdm(all_names.items()):
         for name in tqdm(names):
-            query = f"{name} public records"
-            raw_html = bing_search(query, driver)
-            
-            # Serialize
-            if serialize:
-                with open(f'./html/{group}_{name.replace(" ", "_")}.html', 'w') as f:
-                    f.write(raw_html)
-
-            # Other res
-            parsed = parse_bing_ads(raw_html, query)
-            for domain, ad_items in parsed.items():
-                for ad_opts in ad_items:
-                    all_ads.append([name, group, domain, ad_opts[0], ad_opts[1]])
+            name_split = name.split()
+            for initial in ['D', 'J', 'R', 'M', 'F', 'E', 'A', 'G']:
+                for i in range(3):
+                    query = f"{name_split[0]} {initial} {name_split[1]} public records"
+                    raw_html = bing_search(query, driver)
+                    
+                    # Serialize
+                    if serialize:
+                        with open(f'./html/{group}_{name.replace(" ", "_")}.html', 'w') as f:
+                            f.write(raw_html)
+        
+                    # Other res
+                    parsed = parse_bing_ads(raw_html, query)
+                    for domain, ad_items in parsed.items():
+                        for ad_opts in ad_items:
+                            all_ads.append([name, group, domain, ad_opts[0], ad_opts[1]])
 
     # Save results to CSV
     pd.DataFrame(all_ads[1:], columns=all_ads[0]).to_csv("results.csv")
